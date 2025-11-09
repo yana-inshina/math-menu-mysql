@@ -14,13 +14,19 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.23.1</version>
-</dependency>
-
   <dependencies>
+    <!-- Log4j (уберёт предупреждение StatusLogger) -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.23.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.23.1</version>
+    </dependency>
+
     <!-- MySQL JDBC -->
     <dependency>
       <groupId>com.mysql</groupId>
@@ -43,7 +49,7 @@
 
   <build>
     <plugins>
-      <!-- ТОЛСТЫЙ JAR с суффиксом -shaded -->
+      <!-- Толстый JAR -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
