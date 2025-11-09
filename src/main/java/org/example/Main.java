@@ -12,7 +12,7 @@ public class Main {
     // ==== НАСТРОЙКИ БАЗЫ ДАННЫХ ====
     private static final String DB_URL  = "jdbc:mysql://localhost:3306/mathdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String DB_USER = "app";       // при необходимости поменяйте на своего пользователя
-    private static final String DB_PASS = "password";  // и пароль
+    private static final String DB_PASS = "app123";  // и пароль
 
     enum DType { BYTE, INT, DOUBLE }
     enum Op { ADD, SUB, MUL, DIV, MOD, ABS, POW }
